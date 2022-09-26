@@ -52,14 +52,14 @@ title: Blog Post
     let html = "";
   
     newPost.forEach(function(element, index) {
-        let cutIt = element.substring(0, 200);
+<!--         let cutIt = element.substring(0, 200); -->
         html += `<div class="card m-3">
                      <div class="card-body m-3">
                        <h5 class="card-title">
                         Post ${index + 1}
                     </h5>
                     <div id="edit" class="card-text"> 
-                        <div>${cutIt}....<a href="/post/" class="card-link">Read More</a></div>
+                        <div>${element}</div>
                     </div>
                      <button id="${index}" onClick="deletePosts(this.id)"
                     class="btn btn-info">
